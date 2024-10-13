@@ -52,6 +52,7 @@ public class NoteService {
         Note note = opNote.get();
         note.setTitle(noteDetails.getTitle());
         note.setContent(noteDetails.getContent());
+        note.setUser(noteDetails.getUser());
 
         return noteRepository.save(note);
     }
