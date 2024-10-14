@@ -27,9 +27,11 @@ public class Note {
 
     boolean isTrashed;
 
-    // Folder id;
-
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    @ManyToOne
+    @JoinColumn(name = "folder_id")
+    private Folder folder;
 }
